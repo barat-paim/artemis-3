@@ -33,21 +33,21 @@ def run_training():
     # Initialize config (keep existing config setup)
     config = TrainingConfig(
         model_name="facebook/opt-125m",
-        train_size=1000,
-        eval_size=100,
-        batch_size=12,
-        num_epochs=3,
+        train_size=10000,
+        eval_size=1000,
+        batch_size=32,
+        num_epochs=6,
         model_max_length=512,
-        learning_rate=1e-6, # consider reducing this 
+        learning_rate=2e-5, # consider reducing this 
         weight_decay=0.01,
         warmup_ratio=0.1,
         output_dir="./tmp_output",
         device="cuda" if torch.cuda.is_available() else "cpu",
-        max_steps=1000,
-        save_steps=100,
-        early_stopping_patience=50,
-        num_train_samples=1000,  # Added
-        num_eval_samples=100,     # Added
+        max_steps=10000,
+        save_steps=1000,
+        early_stopping_patience=5,
+        num_train_samples=10000,  # Added
+        num_eval_samples=1000,     # Added
         save_top_k=3
     )
 
