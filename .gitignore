@@ -1,0 +1,57 @@
+# Directories
+wandb/
+lightning_outputs/
+tmp_outputs/
+runs/
+alpaca/
+squad/
+__pycache__/
+.pytest_cache/
+
+# Files
+*.log
+*.ckpt
+*.pth
+*.safetensors
+*.tfevents.*
+
+run.sh
+git.sh
+model/
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+results/
+logs/
+*.pt
+*.bin
+pytorch/
+
+image_dataset/
+data/
+
+# Additional entries based on your directory listing
+llama_3_2_1b_model/
+*.json
+*.log
+
+# Temporary files
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+fine_tuned_llama_squad/
+fine_tuned_llama_squad_small/
+squad/fine_tuned_llama_squad/
+squad/fine_tuned_llama_small/
+squad/fine_tuned_llama_improved/

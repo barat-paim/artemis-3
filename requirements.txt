@@ -1,0 +1,7 @@
+pytorch-lightning>=2.0.0
+wandb
+transformers
+peft
+datasets
+scikit-learn
+torch>=2.0.0 
