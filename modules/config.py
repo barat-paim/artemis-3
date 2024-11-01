@@ -31,7 +31,7 @@ class TrainingConfig:
     eval_size: int = 100
 
     # Logging & Checkpointing
-    output_dir: str = "./tmp_outputs"
+    output_dir: str = "./tmp_output"
     logging_steps: int = 10
     eval_steps: int = 20
 
