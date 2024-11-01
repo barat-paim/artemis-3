@@ -1,4 +1,5 @@
 # Directories
+tmp_output/
 wandb/
 lightning_outputs/
 tmp_outputs/
